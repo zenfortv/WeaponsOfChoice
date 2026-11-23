@@ -75,7 +75,7 @@ The shaders and scripts are embedded in the `.toe`. `code/` and `shaders/` hold 
 
 ## Licences
 - My code, shaders and the `.toe` network: MIT (see `LICENSE`).
-- Giga's point clouds (`models/`): a gift for this project. You may use them in this set and in your own TouchDesigner work, with credit to @giga_rlt. They are **not** under MIT, so don't sell them or redistribute them on their own.
+- Giga's point clouds (`models/`): a gift from Giga for this project, shared with his blessing. You may use them in this set and in your own TouchDesigner work, with credit to @giga_rlt. They are **not** under MIT, so don't sell them or redistribute them on their own.
 - The weapon models in `WeaponsArchive/models/`: each one keeps its own licence (CC0, CC-BY 3.0/4.0, OGA-BY 3.0, GPL 2.0+). The authors and links are in `WeaponsArchive/models/index.csv`. Rows with no source were built by hand in Blender for this project.
 - Fonts: Press Start 2P and VT323, SIL Open Font License 1.1 ([Google Fonts](https://fonts.google.com)).
 - HDRI: `studio_small_09` from [Poly Haven](https://polyhaven.com), CC0.
