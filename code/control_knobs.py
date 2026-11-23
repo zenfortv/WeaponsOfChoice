@@ -110,9 +110,9 @@ def controls():
             out.append(dict(par='Blob:Color', kind=BUTTON, step=1, label='', raw=True, value=None, x=cx - 55, y=Y_KNOBS[3], hw=50, hh=13))
             out.append(knob('Pop:Popgrow', 'pop grow', cx + 55, Y_KNOBS[3]))     # cloud swells with the bass (MetalShow.84)
         # presets: STORE arms, then a number saves; a number alone recalls (lit = current preset)
-        out.append(button(sc + ':Storearm', 'STORE', x0 + 46, Y_PRESET, 36, hh=11))
-        for k in range(1, 4):    # 3 presets: the row fits inside the column card
-            out.append(button(sc + ':Preset', str(k), x0 + 74 + 50 * k, Y_PRESET, 21, value=float(k), hh=11,
+        out.append(button(sc + ':Storearm', 'STORE', x0 + 44, Y_PRESET, 32, hh=11))
+        for k in range(1, 4):    # 3 presets, all inside the column card (x0 + 5 .. x0 + 235)
+            out.append(button(sc + ':Preset', str(k), x0 + 56 + 52 * k, Y_PRESET, 20, value=float(k), hh=11,
                               call="op('%s/fx').module.slot(op('%s'), %d)" % (PATHS[sc], PATHS[sc], k)))
     # particles (MetalShow.59): knobs in the free CRASH slots, bang buttons in the free LUMA slots
     cxc, cxl = COL_W * 4 + COL_W / 2, COL_W * 5 + COL_W / 2
@@ -158,14 +158,14 @@ def controls():
     out.append(button('Show:Drop', 'DROP', cx, Y_BTN2, 35, call="op('/show/engine').module.drop_press()"))
     out.append(button('Boom:Black', 'BLACK', cx + 76, Y_BTN2, 35))  # MetalShow.80: hard blackout back, panel only
     # beat row: TAP tempo, bang every N beats (stepper), DOLLY bang by hand
-    out.append(button('Show:Tap', 'TAP', x0 + 30, Y_PRESET, 24, hh=11))
-    for st in stepper(Y_PRESET, 'Show:Beatevery', x0 + 54, 134, hh=11):
+    out.append(button('Show:Tap', 'TAP', x0 + 30, Y_PRESET, 23, hh=11))
+    for st in stepper(Y_PRESET, 'Show:Beatevery', x0 + 56, 122, hh=11):
         st['raw'] = True
         out.append(st)
-    out.append(button('Pop:Dollybang', 'DOLLY', x0 + 212, Y_PRESET, 24, hh=11))
+    out.append(button('Pop:Dollybang', 'DOLLY', x0 + 205, Y_PRESET, 28, hh=11))   # ends at x0 + 233, inside the card
     # timeline row
-    out.append(knob('Show:Section', 'section min', 65, Y_TIME, 29))
-    out.append(knob('Show:Fadetime', 'fade sec', 175, Y_TIME, 29))
+    out.append(knob('Show:Section', 'section min', 65, Y_TIME - 6, 26))     # under the column cards
+    out.append(knob('Show:Fadetime', 'fade sec', 175, Y_TIME - 6, 26))
     out.append(button('Show:Play', 'PLAY', 320, Y_TIME, 50, hh=16))
     out.append(button('Show:Restart', 'RESTART', 430, Y_TIME, 50, hh=16))
     out.append(button('Show:Next', 'NEXT', 540, Y_TIME, 50, hh=16))
@@ -179,9 +179,9 @@ def controls():
     for s in stepper(Y_TIME, 'Grade:Look', 1185, 230, hh=16):
         s['raw'] = True
         out.append(s)
-    out.append(knob('Pop:Spin', 'pop spin', 1500, Y_TIME, 29))
-    out.append(knob('Pop:Scanrate', 'pop scan', 1610, Y_TIME, 29))
-    out.append(knob('Input:Hudtop', 'hud text', 1720, Y_TIME, 29))
+    out.append(knob('Pop:Spin', 'pop spin', 1500, Y_TIME - 14, 26))
+    out.append(knob('Pop:Scanrate', 'pop scan', 1610, Y_TIME - 14, 26))
+    out.append(knob('Input:Hudtop', 'hud text', 1720, Y_TIME - 14, 26))
     out.append(button('Show:Shift', 'SHIFT', 1840, Y_TIME, 60, hh=20))   # hold changes, apply all together (MetalShow.58)   # HUD neon text on top of the effects (MetalShow.55)
     # setup row (MetalShow.81): TouchDesigner's own timeline, audio auto gain + driver, camera input driver + device
     out.append(dict(button('Time:play', 'TD PLAY', 290, Y_SETUP, 45, value=1.0, hh=11), fixed=True))
