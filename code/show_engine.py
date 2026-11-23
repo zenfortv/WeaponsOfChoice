@@ -218,7 +218,7 @@ def dpad(name, sign):
         return
     fx = op(FX_OF[f])
     cur = int(fx.par.Preset.eval()) or (0 if sign > 0 else 1)
-    n = (cur - 1 + sign) % 4 + 1
+    n = (cur - 1 + sign) % 3 + 1      # 3 presets
     op(FX_OF[f] + '/fx').module.slot(fx, n)
     _flash(SHORTCUT[FX_OF[f]] + ':Preset#%d' % n)
 
@@ -240,7 +240,7 @@ def _stored_slots(fx):
     t = fx.op('presets')
     if t is None:
         return []
-    return [r for r in range(1, t.numRows) if any(t[r, c].val != '' for c in range(1, t.numCols))]
+    return [r for r in range(1, min(t.numRows, 4)) if any(t[r, c].val != '' for c in range(1, t.numCols))]
 
 
 def auto_step():

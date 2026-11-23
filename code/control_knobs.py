@@ -110,9 +110,9 @@ def controls():
             out.append(dict(par='Blob:Color', kind=BUTTON, step=1, label='', raw=True, value=None, x=cx - 55, y=Y_KNOBS[3], hw=50, hh=13))
             out.append(knob('Pop:Popgrow', 'pop grow', cx + 55, Y_KNOBS[3]))     # cloud swells with the bass (MetalShow.84)
         # presets: STORE arms, then a number saves; a number alone recalls (lit = current preset)
-        out.append(button(sc + ':Storearm', 'STORE', x0 + 36, Y_PRESET, 30, hh=11))
-        for k in range(1, 5):
-            out.append(button(sc + ':Preset', str(k), x0 + 46 + 44 * k, Y_PRESET, 19, value=float(k), hh=11,
+        out.append(button(sc + ':Storearm', 'STORE', x0 + 46, Y_PRESET, 36, hh=11))
+        for k in range(1, 4):    # 3 presets: the row fits inside the column card
+            out.append(button(sc + ':Preset', str(k), x0 + 74 + 50 * k, Y_PRESET, 21, value=float(k), hh=11,
                               call="op('%s/fx').module.slot(op('%s'), %d)" % (PATHS[sc], PATHS[sc], k)))
     # particles (MetalShow.59): knobs in the free CRASH slots, bang buttons in the free LUMA slots
     cxc, cxl = COL_W * 4 + COL_W / 2, COL_W * 5 + COL_W / 2

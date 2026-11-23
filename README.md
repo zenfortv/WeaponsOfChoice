@@ -48,7 +48,7 @@ Performance: at 1920x1080 on a GTX 1070 it ran at about 25 fps with the HUD, blo
 
 ### Panel
 - **Top row**: each effect's on/off (METAL, EDGE, BLOB, CRASH, LUMA), then VIDEO / HUD / POP, then AUTO and CUT (cut or fade).
-- **Each column** sits on its own dark card: 8 look knobs, 2 actions, RESET (knobs back to the defaults), FB RST (clear the feedback) and 4 presets. Press STORE and then a number to save, or a number on its own to recall. Controls on a **violet** backing belong to the POP point clouds, whichever column they sit in.
+- **Each column** sits on its own dark card: 8 look knobs, 2 actions, RESET (knobs back to the defaults), FB RST (clear the feedback) and 3 presets. Press STORE and then a number to save, or a number on its own to recall. Controls on a **violet** backing belong to the POP point clouds, whichever column they sit in.
 - **METAL** has a **NOISE** button: on, the liquid chrome is shaped by noise plus your picture (knob **video** sets the mix); off, only your picture shapes it.
 - **Left column**: the gamepad drawing, which lights each button as you press it. Below it are the audio knobs (gain, amount, kick, pad fade), then MAPPING, screens, PANIC (clear every feedback) and **PAD ON / OFF**.
 - **Master column**: BOOM, STROBE, ZOOM, DROP and BLACK. BLACK is always the very last stage before the output.
