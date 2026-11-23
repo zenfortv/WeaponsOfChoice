@@ -1,0 +1,776 @@
+{
+  "archive": "WeaponsArchive",
+  "as_of": "2026-11-20",
+  "note": "Public-source research. Buyer lists = main operators/orders, not complete. Verify buyers in SIPRI Arms Transfers DB (https://www.sipri.org/databases/armstransfers). 'model_search' links open Sketchfab filtered to downloadable models - check each model's licence. Costs/quantities: best public estimates found 2026-11-20, sources disagree - treat as order of magnitude.",
+  "ongoing_conflicts_reference": {
+    "Russia-Ukraine war": "ongoing, front stalled, peace talks deadlocked (ISW, 12 Nov 2026)",
+    "Gaza": "Oct 2025 ceasefire, near collapse, Israeli strikes continue (Board of Peace report, 18 Nov 2026)",
+    "2026 Iran war (US + Israel vs Iran)": "started Feb/Mar 2026 (Operation Epic Fury); check current status",
+    "Yemen / Red Sea (Houthis)": "intermittent strikes since 2023",
+    "Sahel (Mali, Burkina Faso, Niger)": "ongoing insurgencies",
+    "US boat strikes Caribbean / Venezuela": "Jan 2026 Caracas raid, boat strike campaign continues (War on the Rocks, 2 Nov 2026)"
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "F-35 Lightning II",
+      "category": "stealth fighter jet",
+      "maker": "Lockheed Martin",
+      "factories": [
+        "Fort Worth, Texas, USA - main final assembly (Air Force Plant 4)",
+        "Cameri (Novara), Italy - Leonardo FACO, final assembly for Italy/Netherlands + wing production",
+        "Samlesbury, Lancashire, UK - BAE Systems, rear fuselage for every F-35",
+        "Palmdale, California, USA - Northrop Grumman, centre fuselage",
+        "East Hartford / Middletown, Connecticut, USA - Pratt & Whitney F135 engine"
+      ],
+      "buyers": [
+        "USA",
+        "UK",
+        "Italy",
+        "Netherlands",
+        "Norway",
+        "Denmark",
+        "Belgium",
+        "Poland",
+        "Finland",
+        "Switzerland",
+        "Germany",
+        "Czechia",
+        "Greece",
+        "Romania",
+        "Israel",
+        "Japan",
+        "South Korea",
+        "Australia",
+        "Singapore"
+      ],
+      "wars_past": [
+        "Iraq/Syria vs ISIS (US, UK)",
+        "Afghanistan 2018-2021 (USMC)",
+        "Israel: strikes in Syria, Lebanon, Gaza, Yemen",
+        "Israel-Iran 12-day war June 2025"
+      ],
+      "wars_ongoing": [
+        "2026 Iran war (US + Israel)",
+        "Gaza strikes (Israel F-35I Adir)",
+        "Red Sea / Houthis"
+      ],
+      "model_search": "https://sketchfab.com/search?q=F-35&features=downloadable&type=models",
+      "pointcloud_notes": "Very many good models (A/B/C variants). Clean hard-surface, great silhouette.",
+      "unit_cost": "F-35A ~$92M flyaway (Lots 18-19, incl. engine); F-35B ~$121M; F-35C ~$111M",
+      "quantity_built_or_sold": "1,387 delivered (to 27 Sep 2026); ~3,500 planned worldwide",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No incident with an F-35 publicly confirmed as the shooter and a death toll.",
+        "context": "Used in Israeli air campaigns: Gaza (~73,900 Palestinians killed by all weapons, Sep 2026 figure) and Iran 2026 (3,375-7,650 killed in Iran by all US/Israeli weapons, of whom 1,030-2,362 civilians, Feb-Apr 2026). Not attributable to the F-35.",
+        "estimate_model": {
+          "range": "~2,200-11,800",
+          "formula": "Gaza 73.9k x 50-80% air x 5-16% F-35 + Iran 2026",
+          "buyer_to_target": "ISRAEL (48 F-35I, US) > GAZA, LEBANON, IRAN",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Eurofighter Typhoon",
+      "category": "multirole fighter jet",
+      "maker": "Eurofighter GmbH (Airbus, BAE Systems, Leonardo)",
+      "factories": [
+        "Manching, Bavaria, Germany - Airbus final assembly",
+        "Warton, Lancashire, UK - BAE Systems final assembly",
+        "Caselle (Turin), Italy - Leonardo final assembly",
+        "Getafe (Madrid), Spain - Airbus final assembly",
+        "Munich, Germany - MTU, EJ200 engine (Eurojet consortium with Rolls-Royce, Avio, ITP)"
+      ],
+      "buyers": [
+        "Germany",
+        "UK",
+        "Italy",
+        "Spain",
+        "Austria",
+        "Saudi Arabia",
+        "Oman",
+        "Kuwait",
+        "Qatar",
+        "Turkey (ordered 2025)"
+      ],
+      "wars_past": [
+        "Libya 2011 (UK, Italy)",
+        "Iraq/Syria vs ISIS - Op Shader (UK)",
+        "Yemen (Saudi-led coalition, from 2015)",
+        "UK/US strikes on Houthis 2024",
+        "UK shoot-downs of Iranian drones April 2024"
+      ],
+      "wars_ongoing": [
+        "Yemen / Red Sea",
+        "NATO air policing on the eastern flank (not combat)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=eurofighter+typhoon&features=downloadable&type=models",
+      "pointcloud_notes": "Delta wing + canards, strong outline. Several free models.",
+      "unit_cost": "~€100-140M per jet (estimates); Germany 20 Tranche 5 = €3.75B incl. support (~€187M each)",
+      "quantity_built_or_sold": "769 ordered / 618 delivered (Airbus, 30 Jun 2026)",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No incident publicly tied to a Typhoon with a death toll.",
+        "context": "Saudi-led air war in Yemen 2015-2022: 25,054 air raids, 8,759 civilians killed (Yemen Data Project). Saudi Typhoons were among the main strike jets, along with F-15S and Tornado; not separable."
+      }
+    },
+    {
+      "id": 3,
+      "name": "AH-64E Apache Guardian",
+      "category": "attack helicopter",
+      "maker": "Boeing",
+      "factories": [
+        "Mesa, Arizona, USA - Boeing final assembly",
+        "Hyderabad, India - Tata Boeing Aerospace, fuselages",
+        "Lynn, Massachusetts, USA - GE Aerospace T700 engines"
+      ],
+      "buyers": [
+        "USA",
+        "UK",
+        "Netherlands",
+        "Poland (96 ordered)",
+        "Greece",
+        "Israel",
+        "Egypt",
+        "Saudi Arabia",
+        "UAE",
+        "Qatar",
+        "Kuwait",
+        "Morocco",
+        "India",
+        "Japan",
+        "South Korea",
+        "Taiwan",
+        "Indonesia",
+        "Singapore",
+        "Australia"
+      ],
+      "wars_past": [
+        "Gulf War 1991",
+        "Afghanistan 2001-2021",
+        "Iraq 2003",
+        "Libya 2011 (UK)",
+        "Iraq/Syria vs ISIS",
+        "Israel: Lebanon, Gaza",
+        "Yemen (Saudi, UAE)",
+        "Sinai insurgency (Egypt)"
+      ],
+      "wars_ongoing": [
+        "Gaza / Lebanon (Israel)",
+        "Yemen"
+      ],
+      "model_search": "https://sketchfab.com/search?q=AH-64+apache&features=downloadable&type=models",
+      "pointcloud_notes": "Rotors make beautiful rotating point clouds. Pick a model with separate rotor meshes to animate.",
+      "unit_cost": "~$35-52M per AH-64E (new); export packages much higher",
+      "quantity_built_or_sold": "~2,500 Apaches all variants delivered; 800+ AH-64E new + remanufactured (Boeing, 2025)",
+      "deaths": {
+        "short": "12+ in one documented strike",
+        "documented_incidents": "12 July 2007, New Baghdad: US AH-64 attack killed about 12 people including two Reuters journalists; two children wounded (video published by WikiLeaks 2010).",
+        "context": "Apaches have flown in every US war since 1989 and in Israeli, Saudi and Egyptian operations; no total count exists.",
+        "estimate_model": {
+          "range": "NO MODEL",
+          "formula": "no share data",
+          "buyer_to_target": "ISRAEL, SAUDI ARABIA (US) > GAZA, YEMEN",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "MQ-9 Reaper / MQ-9B SkyGuardian",
+      "category": "armed drone (MALE UAV)",
+      "maker": "General Atomics Aeronautical Systems",
+      "factories": [
+        "Poway, California, USA - HQ and production",
+        "Adelanto and Palmdale (Gray Butte / El Mirage), California, USA - production and flight test"
+      ],
+      "buyers": [
+        "USA",
+        "UK (Protector RG1)",
+        "France",
+        "Italy",
+        "Spain",
+        "Netherlands",
+        "Belgium",
+        "Poland",
+        "India (31 ordered 2024)",
+        "Taiwan",
+        "Morocco",
+        "Japan Coast Guard"
+      ],
+      "wars_past": [
+        "Afghanistan",
+        "Iraq",
+        "Syria",
+        "Libya",
+        "Somalia",
+        "Yemen",
+        "Sahel - Op Barkhane (France)",
+        "Many shot down by Houthis 2023-2025"
+      ],
+      "wars_ongoing": [
+        "2026 Iran war (US)",
+        "Yemen / Red Sea",
+        "Somalia"
+      ],
+      "model_search": "https://sketchfab.com/search?q=MQ-9+reaper&features=downloadable&type=models",
+      "pointcloud_notes": "Long thin wings + V-tail: elegant, sparse shape.",
+      "unit_cost": "~$30-32M per aircraft; 4-aircraft system with ground station >$100M",
+      "quantity_built_or_sold": "USAF programme ~366 aircraft (195 Block 1 + 171 Block 5, DoD SAR 2018) + exports; total not published",
+      "deaths": {
+        "short": "10 civilians in one strike; 910-2,200 civilians campaign est.",
+        "documented_incidents": "29 Aug 2021, Kabul: US drone strike (reported as an MQ-9 Reaper with Hellfire) killed 10 civilians including 7 children; Pentagon admitted the error.",
+        "context": "US drone and covert strikes in Pakistan, Afghanistan, Yemen and Somalia 2010-2020: 910-2,200 civilians killed (Bureau of Investigative Journalism). Pakistan drone strikes 2004 onward: 2,449-3,949 killed in total. Includes the older MQ-1 Predator, so not MQ-9 only.",
+        "estimate_model": {
+          "range": "~3,100-8,100 (450-2,000 civ)",
+          "formula": "US drone strikes 6.3-9k x 50-90% MQ-9",
+          "buyer_to_target": "US AIR FORCE > PAKISTAN, YEMEN, SOMALIA",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Switchblade 600",
+      "category": "loitering munition (kamikaze drone)",
+      "maker": "AeroVironment",
+      "factories": [
+        "Simi Valley, California, USA - HQ and production",
+        "Salt Lake City, Utah, USA - newer loitering-munition production site"
+      ],
+      "buyers": [
+        "USA",
+        "Ukraine",
+        "Taiwan",
+        "Lithuania"
+      ],
+      "wars_past": [
+        "Afghanistan (smaller Switchblade 300)"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war"
+      ],
+      "model_search": "https://sketchfab.com/search?q=switchblade+drone&features=downloadable&type=models",
+      "pointcloud_notes": "Small tube-launched drone, X wings. Fewer models - may need a paid one or a simple rebuild.",
+      "unit_cost": "Not official: est. $70-175k per round (Switchblade 300: $52,914 FY2023)",
+      "quantity_built_or_sold": "Not disclosed; US Army orders 2026: $186M (Feb) + $51M (Aug)",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No public casualty figure.",
+        "context": "Used by Ukraine against Russian forces; quantities and results not disclosed.",
+        "estimate_model": {
+          "range": "NO MODEL",
+          "formula": "results not disclosed",
+          "buyer_to_target": "UKRAINE (US) > RUSSIAN FORCES",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "M142 HIMARS",
+      "category": "rocket artillery / precision ballistic system",
+      "maker": "Lockheed Martin Missiles and Fire Control",
+      "factories": [
+        "Camden, Arkansas, USA - launcher, GMLRS rockets, ATACMS and PrSM missiles",
+        "Grand Prairie, Texas, USA - Missiles and Fire Control HQ"
+      ],
+      "buyers": [
+        "USA",
+        "Ukraine",
+        "Poland",
+        "Romania",
+        "Estonia",
+        "Latvia",
+        "Lithuania",
+        "Italy",
+        "Croatia",
+        "Australia",
+        "Singapore",
+        "Taiwan",
+        "UAE",
+        "Jordan",
+        "Morocco"
+      ],
+      "wars_past": [
+        "Afghanistan 2010",
+        "Iraq/Syria vs ISIS"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war",
+        "2026 Iran war (US, reported)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=HIMARS&features=downloadable&type=models",
+      "pointcloud_notes": "Truck + 6-rocket pod. Free ones are rarer; good paid ones on CGTrader.",
+      "unit_cost": "Launcher ~$5-5.3M (US FY2024-25); GMLRS rocket ~$190-220k; ATACMS ~$1.5M",
+      "quantity_built_or_sold": "~750 launchers built (Nov 2025); GMLRS capacity ~14,000 rockets/yr",
+      "deaths": {
+        "short": "89-400 in one strike",
+        "documented_incidents": "1 Jan 2023, Makiivka (occupied Donetsk): HIMARS rockets hit a building housing Russian soldiers. Russia admitted 89 dead; Ukraine claimed ~400.",
+        "context": "No total count; HIMARS is one of Ukraine's main long-range strike systems since mid-2022.",
+        "estimate_model": {
+          "range": "~1,000-8,400 soldiers",
+          "formula": "RU dead 352k x 30-60% artillery x 1-4% HIMARS",
+          "buyer_to_target": "UKRAINE (US) > RUSSIAN FORCES",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "MIM-104 Patriot (PAC-3 MSE)",
+      "category": "air & missile defence system",
+      "maker": "RTX / Raytheon (system, radar, GEM-T) + Lockheed Martin (PAC-3 MSE interceptor)",
+      "factories": [
+        "Andover and Tewksbury, Massachusetts, USA - Raytheon system integration and radar",
+        "Camden, Arkansas, USA - Lockheed Martin PAC-3 MSE missile (target 650/year by 2027)",
+        "Schrobenhausen, Bavaria, Germany - COMLOG (MBDA + Raytheon), GEM-T interceptor line",
+        "Europe in progress 2026: launch tubes from Poland, cables from Spain (Tecnobit), Diehl Defence talks for German PAC-3 production"
+      ],
+      "buyers": [
+        "USA",
+        "Germany",
+        "Netherlands",
+        "Poland",
+        "Romania",
+        "Sweden",
+        "Spain",
+        "Greece",
+        "Switzerland",
+        "Ukraine",
+        "Israel (retired 2024)",
+        "Saudi Arabia",
+        "UAE",
+        "Qatar",
+        "Kuwait",
+        "Bahrain",
+        "Japan",
+        "Taiwan",
+        "South Korea"
+      ],
+      "wars_past": [
+        "Gulf War 1991",
+        "Iraq 2003",
+        "Yemen - Houthi missiles on Saudi Arabia",
+        "Iranian missile attack on Al Udeid, Qatar, June 2025"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war (intercepts of Kinzhal / Iskander)",
+        "2026 Iran war (US, Israel, Gulf states)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=patriot+missile+launcher&features=downloadable&type=models",
+      "pointcloud_notes": "Box launcher on truck - blocky, read well as points. Radar is a nice separate object.",
+      "unit_cost": "Battery ~$560M-1B+ ; PAC-3 MSE missile ~$4-5.3M (US FY2027 budget $5.3M)",
+      "quantity_built_or_sold": "Fire units: not published (19+ countries); PAC-3 MSE ~600/yr, target 650/yr by 2027",
+      "deaths": {
+        "short": "3 allied aircrew (friendly fire, 2003)",
+        "documented_incidents": "2003 Iraq: Patriot batteries shot down a British Tornado (2 crew killed) and a US Navy F/A-18C (pilot killed). March 2026: 3 US F-15Es downed over Kuwait, crews survived; Patriot vs Kuwaiti F/A-18 attribution disputed.",
+        "context": "Mainly defensive: it shoots down missiles and aircraft, so it mostly prevents deaths. Not a casualty-producing weapon in the usual sense.",
+        "estimate_model": {
+          "range": "NO MODEL",
+          "formula": "defensive system",
+          "buyer_to_target": "KUWAIT, US, GULF > FRIENDLY FIRE",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "IRIS-T SLM",
+      "category": "medium-range air defence system",
+      "maker": "Diehl Defence",
+      "factories": [
+        "Überlingen, Baden-Württemberg, Germany - missile and system",
+        "Nonnweiler, Saarland, Germany - Diehl warhead and motor work",
+        "Ulm, Germany - Hensoldt TRML-4D radar"
+      ],
+      "buyers": [
+        "Germany",
+        "Ukraine",
+        "Egypt",
+        "Slovenia",
+        "Estonia",
+        "Latvia",
+        "Bulgaria",
+        "Switzerland",
+        "Austria"
+      ],
+      "wars_past": [],
+      "wars_ongoing": [
+        "Russia-Ukraine war (since Oct 2022)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=IRIS-T&features=downloadable&type=models",
+      "pointcloud_notes": "Few free launcher models; the missile alone is easy to find or model.",
+      "unit_cost": "Fire unit ~€140-180M (Bulgaria 1 unit = €180.6M, Oct 2026); missile ~€250k-1M",
+      "quantity_built_or_sold": "Ukraine received 11 systems (2026), 12th due end 2026; Ukraine ordered 18 more (Jan 2026)",
+      "deaths": {
+        "short": "None known (defensive)",
+        "documented_incidents": "No deaths attributed.",
+        "context": "Shoots down Russian missiles and drones over Ukraine since Oct 2022."
+      }
+    },
+    {
+      "id": 9,
+      "name": "Storm Shadow / SCALP EG",
+      "category": "air-launched cruise missile",
+      "maker": "MBDA",
+      "factories": [
+        "Stevenage and Bolton, UK - MBDA UK",
+        "Bourges / Selles-Saint-Denis, France - MBDA France"
+      ],
+      "buyers": [
+        "UK",
+        "France",
+        "Italy",
+        "Greece",
+        "Saudi Arabia",
+        "UAE (Black Shaheen)",
+        "Qatar",
+        "Egypt",
+        "India",
+        "Ukraine"
+      ],
+      "wars_past": [
+        "Iraq 2003",
+        "Libya 2011",
+        "Syria strikes 2018",
+        "Yemen (Saudi-led coalition)",
+        "India-Pakistan May 2025 (SCALP from Rafale)"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war (since May 2023)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=storm+shadow+missile&features=downloadable&type=models",
+      "pointcloud_notes": "Simple long body - good for a fast 'flying' point-cloud shot.",
+      "unit_cost": "~£1-2M per missile (~$1.3-2.5M)",
+      "quantity_built_or_sold": "~2,000-3,000 produced (Deagel 2,250 / other 3,000 - no official figure)",
+      "deaths": {
+        "short": "1-34 in one strike",
+        "documented_incidents": "22 Sep 2023, Sevastopol: Storm Shadows hit the Black Sea Fleet HQ. Ukraine claimed 34 officers killed and 105 wounded; Russia admitted 1 missing.",
+        "context": "Also used in Iraq 2003, Libya 2011, Syria 2018, Yemen (Saudi/UAE) and India-Pakistan 2025; no totals."
+      }
+    },
+    {
+      "id": 10,
+      "name": "FGM-148 Javelin",
+      "category": "anti-tank guided missile",
+      "maker": "Javelin Joint Venture (RTX Raytheon + Lockheed Martin)",
+      "factories": [
+        "Troy, Alabama, USA - Lockheed Martin final assembly",
+        "Tucson, Arizona, USA - Raytheon (seeker, launch unit)",
+        "Orlando, Florida, USA - Lockheed Martin"
+      ],
+      "buyers": [
+        "USA",
+        "UK",
+        "France",
+        "Ireland",
+        "Norway",
+        "Lithuania",
+        "Estonia",
+        "Czechia",
+        "Ukraine",
+        "Georgia",
+        "Australia",
+        "New Zealand",
+        "Taiwan",
+        "India",
+        "Indonesia",
+        "Jordan",
+        "Qatar",
+        "UAE",
+        "Oman"
+      ],
+      "wars_past": [
+        "Iraq 2003",
+        "Afghanistan",
+        "Iraq/Syria vs ISIS"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war"
+      ],
+      "model_search": "https://sketchfab.com/search?q=javelin+missile&features=downloadable&type=models",
+      "pointcloud_notes": "Launcher with CLU sight - many game-ready models.",
+      "unit_cost": "Missile ~$217k + reusable launcher (CLU) ~$250k (FY2021)",
+      "quantity_built_or_sold": "50,000+ missiles and 12,000+ CLUs (Javelin JV)",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No public casualty figure.",
+        "context": "Main infantry anti-tank weapon in Iraq, Afghanistan and Ukraine; kills are counted in vehicles, not people.",
+        "estimate_model": {
+          "range": "NO MODEL",
+          "formula": "kills counted in vehicles",
+          "buyer_to_target": "UKRAINE (US) > RUSSIAN ARMOUR",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "NLAW",
+      "category": "short-range anti-tank weapon",
+      "maker": "Saab Dynamics (+ Thales UK)",
+      "factories": [
+        "Karlskoga, Sweden - Saab Dynamics",
+        "Belfast, Northern Ireland, UK - Thales UK"
+      ],
+      "buyers": [
+        "UK",
+        "Sweden",
+        "Finland",
+        "Luxembourg",
+        "Switzerland",
+        "Saudi Arabia",
+        "Indonesia",
+        "Malaysia",
+        "Ukraine"
+      ],
+      "wars_past": [],
+      "wars_ongoing": [
+        "Russia-Ukraine war (since 2022)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=NLAW&features=downloadable&type=models",
+      "pointcloud_notes": "Simple tube - small object, good as a detail shot.",
+      "unit_cost": "~$30-40k per weapon",
+      "quantity_built_or_sold": "24,200+ produced",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No public casualty figure.",
+        "context": "Used in large numbers by Ukraine in 2022 against Russian armour."
+      }
+    },
+    {
+      "id": 12,
+      "name": "Leopard 2A8 (Leopard 2 family)",
+      "category": "main battle tank",
+      "maker": "KNDS Deutschland (ex Krauss-Maffei Wegmann)",
+      "factories": [
+        "Munich (Allach), Bavaria, Germany - KNDS final assembly",
+        "Kassel, Hesse, Germany - KNDS",
+        "Unterlüß, Lower Saxony, Germany - Rheinmetall 120mm gun"
+      ],
+      "buyers": [
+        "Germany",
+        "Norway",
+        "Netherlands",
+        "Czechia",
+        "Lithuania",
+        "Croatia",
+        "Sweden",
+        "Hungary",
+        "Qatar",
+        "Ukraine (older 2A4/2A6 donated)",
+        "+ many Leopard 2 users: Poland, Spain, Finland, Denmark, Canada, Turkey, Greece..."
+      ],
+      "wars_past": [
+        "Kosovo (KFOR)",
+        "Afghanistan (Canada, Denmark)",
+        "Turkey in Syria 2016-2018"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war (since 2023)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=leopard+2&features=downloadable&type=models",
+      "pointcloud_notes": "Lots of War Thunder-community models. Heavy, angular - strong point-cloud mass.",
+      "unit_cost": "€27.6M per tank (Germany 2024, 105 tanks); €34.4M (Czechia 2025, incl. support)",
+      "quantity_built_or_sold": "Leopard 2 family ~3,600 built (commonly cited); 355+ Leopard 2A8 on contract",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No public casualty figure.",
+        "context": "Combat in Afghanistan (Canada, Denmark), Syria (Turkey, 2016-18) and Ukraine (since 2023).",
+        "estimate_model": {
+          "range": "NO MODEL",
+          "formula": "no data",
+          "buyer_to_target": "UKRAINE, TURKEY (DE) > RUSSIA, SYRIA",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "CAESAR",
+      "category": "self-propelled howitzer (155mm, truck-mounted)",
+      "maker": "KNDS France (ex Nexter)",
+      "factories": [
+        "Roanne, Loire, France - final assembly",
+        "Bourges, Cher, France - gun barrel",
+        "Arquus (France) / Tatra (Czechia) - truck chassis"
+      ],
+      "buyers": [
+        "France",
+        "Belgium",
+        "Denmark",
+        "Czechia",
+        "Lithuania",
+        "Estonia",
+        "Croatia",
+        "Ukraine",
+        "Saudi Arabia",
+        "Morocco",
+        "Indonesia",
+        "Thailand",
+        "Armenia"
+      ],
+      "wars_past": [
+        "Afghanistan",
+        "Mali / Sahel - Op Serval/Barkhane",
+        "Iraq - battle of Mosul 2016-2017",
+        "Yemen (Saudi Arabia)"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war"
+      ],
+      "model_search": "https://sketchfab.com/search?q=caesar+howitzer&features=downloadable&type=models",
+      "pointcloud_notes": "InCom Studio CAESAR on Sketchfab (~18k tris) - check licence.",
+      "unit_cost": "~€3.2M (France 109 Mk II for €350M) to ~€7.25M (Slovenia 12 for €87M)",
+      "quantity_built_or_sold": "~700+ ordered by 15 countries (sum of national orders, estimate)",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No public casualty figure. 2019 leaked French military-intelligence note (Disclose, 'Yemen Papers'): 436,370 people lived within range of Saudi CAESAR guns on the Yemen border.",
+        "context": "Also used in Mali, Iraq (Mosul) and Ukraine."
+      }
+    },
+    {
+      "id": 14,
+      "name": "155mm artillery shell (M795 / DM121 NATO standard)",
+      "category": "ammunition",
+      "maker": "Rheinmetall, General Dynamics OTS, Nammo, BAE Systems",
+      "factories": [
+        "Unterlüß, Lower Saxony, Germany - Rheinmetall 'Werk Niedersachsen', opened Aug 2025, ~140,000 shells in 2026, 350,000/yr from 2027",
+        "Scranton, Pennsylvania, USA - Scranton Army Ammunition Plant (shell bodies)",
+        "Middletown, Iowa, USA - Iowa Army Ammunition Plant (loading)",
+        "Mesquite, Texas, USA - General Dynamics OTS new plant",
+        "Raufoss, Norway - Nammo",
+        "Glascoed, Wales, UK - BAE Systems"
+      ],
+      "buyers": [
+        "All NATO armies",
+        "Ukraine",
+        "Israel (incl. US transfers)",
+        "+ every CAESAR / M777 / PzH 2000 user"
+      ],
+      "wars_past": [
+        "Iraq",
+        "Afghanistan",
+        "Syria"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war (largest consumer)",
+        "Gaza / Lebanon (Israel)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=155mm+shell&features=downloadable&type=models",
+      "pointcloud_notes": "Trivial shape - can be rebuilt procedurally in TD; nice as massed instanced rows.",
+      "unit_cost": "~$8,000 per shell (2026, up from ~$2,000 before 2022); Europe ~€4-8k",
+      "quantity_built_or_sold": "US ~36,000/month (Mar 2026, goal 100,000); Rheinmetall capacity ~1.1M/yr; Unterlüß 140,000 in 2026; EU target 2M/yr",
+      "deaths": {
+        "short": "Not attributable (artillery = main killer of the Ukraine war)",
+        "documented_incidents": "No count per shell type.",
+        "context": "Artillery was widely estimated at 70-80% of casualties early in the Ukraine war (contested figure; drones overtook artillery by 2026). Russian dead confirmed by name: 248,000+ (Mediazona/BBC, Sep 2026), all causes.",
+        "estimate_model": {
+          "range": "~32,000-127,000 soldiers",
+          "formula": "RU dead 352k x 30-60% artillery x 30-60% NATO 155",
+          "buyer_to_target": "UKRAINE (US, EU) > RUSSIAN FORCES",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "GBU-39 Small Diameter Bomb",
+      "category": "precision guided bomb",
+      "maker": "Boeing",
+      "factories": [
+        "St. Charles, Missouri, USA - Boeing (also JDAM kits)",
+        "GLSDB ground-launched version: Boeing + Saab (Sweden)"
+      ],
+      "buyers": [
+        "USA",
+        "Israel",
+        "Saudi Arabia",
+        "UAE",
+        "Italy",
+        "Netherlands",
+        "Australia",
+        "South Korea",
+        "Ukraine (GLSDB)"
+      ],
+      "wars_past": [
+        "Iraq",
+        "Afghanistan",
+        "Syria",
+        "Libya",
+        "Yemen (Saudi)",
+        "Gaza - documented in Rafah strike May 2024",
+        "Lebanon"
+      ],
+      "wars_ongoing": [
+        "Gaza (Israel)",
+        "Russia-Ukraine war (GLSDB, since 2024)",
+        "2026 Iran war (likely, not confirmed in sources checked)"
+      ],
+      "model_search": "https://sketchfab.com/search?q=GBU-39&features=downloadable&type=models",
+      "pointcloud_notes": "Small bomb with pop-out wings.",
+      "unit_cost": "~$40k per bomb (SDB I, FY2021)",
+      "quantity_built_or_sold": "17,000+ built (older public figure); US budgets plan ~49,500 from FY2018",
+      "deaths": {
+        "short": "45 in one documented strike",
+        "documented_incidents": "26 May 2024, Rafah: strike on a displaced-people tent camp killed at least 45 (Gaza Health Ministry), 240+ wounded; GBU-39 fragments identified by NYT and CNN.",
+        "context": "Used by Israel throughout Gaza and Lebanon, by the Saudi coalition in Yemen, and by Ukraine (GLSDB); no total count.",
+        "estimate_model": {
+          "range": "~1,100-5,900",
+          "formula": "Gaza 73.9k x 50-80% air x 3-10% GBU-39",
+          "buyer_to_target": "ISRAEL (US) > GAZA",
+          "method": "see ESTIMATES.md"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "DJI Mavic (commercial drone rigged by armed groups)",
+      "category": "commercial quadcopter used as grenade dropper",
+      "maker": "DJI",
+      "factories": [
+        "Shenzhen, China - DJI (NOT Europe/USA: added as the cheap drone of armed groups)"
+      ],
+      "buyers": [
+        "open retail market"
+      ],
+      "users_documented": [
+        "ISIS (Iraq/Syria)",
+        "Mexican cartels",
+        "FARC dissidents (Colombia)",
+        "PKK (seized in Turkey)",
+        "Myanmar resistance",
+        "Ukraine and Russia"
+      ],
+      "wars_past": [
+        "ISIS Iraq/Syria 2016-2017",
+        "Turkey-PKK"
+      ],
+      "wars_ongoing": [
+        "Russia-Ukraine war",
+        "Myanmar civil war",
+        "Mexico cartel violence",
+        "Colombia"
+      ],
+      "unit_cost": "~$2,000 (Mavic 3 class, consumer price)",
+      "quantity_built_or_sold": "millions; DJI ~70% of world consumer drones (2025 est.), 94% in 2021 (DroneAnalyst)",
+      "deaths": {
+        "short": "No public count",
+        "documented_incidents": "No count attributable to the drone type",
+        "context": "Typical payload 1-2 VOG-17 type grenades (CTC Sentinel 2025)",
+        "estimate_model": {
+          "range": "NO MODEL",
+          "formula": "no aggregate data",
+          "buyer_to_target": "ARMED GROUPS (RETAIL, CN) > UKRAINE, MYANMAR, MEXICO",
+          "method": "see ESTIMATES.md"
+        }
+      },
+      "model_search": "",
+      "pointcloud_notes": "Blender model tools/blender_models/16_dji_mavic.py"
+    }
+  ],
+  "deaths_note": "No public source counts deaths per weapon system. 'documented_incidents' = strikes where the weapon was identified; 'context' = wider campaign totals for all weapons, NOT attributable to this object. Researched 2026-11-20. ESTIMATES.md adds model ranges (campaign deaths x attack-type share x weapon share) - assumptions listed there."
+}

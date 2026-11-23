@@ -1,0 +1,16 @@
+id,name,file,match,source_url,author,license,format,notes
+1,F-35 Lightning II,raw/01_f35_lookalike_jet.glb,lookalike,https://poly.pizza/m/6fyLMORhgGK,jeremy,CC-BY 3.0,glb,generic modern stealth-ish fighter
+2,Eurofighter Typhoon,raw/02_typhoon_f15.glb,lookalike,https://opengameart.org/content/f-15,mndvecb,OGA-BY 3.0,glb,F-15 twin-tail fighter converted from .blend with Blender; not delta-canard
+3,AH-64E Apache,raw/03_apache/Attack_Helicopter.obj,lookalike,https://opengameart.org/content/attack-chopper,Geibu3D (Cheese Animal Productions),CC-BY 4.0,obj,Apache-styled attack helicopter 1644 verts; fbx also in zip not kept
+4,MQ-9 Reaper,raw/04_mq9_predator_drone.glb,lookalike,https://poly.pizza/m/3Eio09miiAF,sftwr314r8,CC-BY 3.0,glb,Predator-type MALE drone
+5,Switchblade 600,,missing,,,,,build procedurally: small tube + fold-out wings
+6,HIMARS M142,raw/06_himars_m939_truck.glb,lookalike,https://poly.pizza/m/y8lBpvMlim,J-Toastie,CC-BY 3.0,glb,M939 military cargo truck - weak lookalike (no launcher pod); could add procedural rocket pod
+7,Patriot PAC-3,raw/07_patriot/tankbody.obj+rockethead.obj+rocket.obj,lookalike,https://opengameart.org/content/missile-launcher-tank,mutantleg,CC0,obj,tracked missile-launcher vehicle; 3 separate OBJ parts (body/head/rocket) - weak lookalike
+8,IRIS-T SLM,raw/08_irist_missile_turret.glb,lookalike,https://poly.pizza/m/RqnAj5N9fL,Zsky,CC-BY 3.0,glb,missile rack turret - weak lookalike (not truck)
+9,Storm Shadow,raw/09_stormshadow/exocet.obj,lookalike,https://opengameart.org/content/exocet-anti-ship-missile,MysticMike,GPL 2.0 (or later),obj,Exocet cruise missile 122 verts; GPL licence - not CC. CC-BY alternative: poly.pizza/m/1Xid2Qhqn2s (Jarlan Perez)
+10,Javelin,raw/10_javelin_bazooka.glb,lookalike,https://poly.pizza/m/2IabhRwQkCt,Poly by Google,CC-BY 3.0,glb,shoulder-launched tube launcher
+11,NLAW,raw/11_nlaw_rpg_launcher.glb,lookalike,https://poly.pizza/m/2qqg9SbrsZ,austincford,CC-BY 3.0,glb,RPG-style shoulder launcher
+12,Leopard 2A8,raw/12_leopard_abrams.glb,lookalike,https://opengameart.org/content/abrams-tank,sketlux,CC0,glb,Abrams-type MBT converted from .blend with Blender
+13,CAESAR,,missing,,,,,no truck-howitzer found; build procedurally or use truck+barrel
+14,155mm Shell,,missing,,,,,build procedurally
+15,GBU-39 SDB,,missing,,,,,build procedurally (small bomb with fold-out wings)

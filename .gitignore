@@ -1,0 +1,20 @@
+# work files (with the TouchDesigner MCP) and history
+WeaponsOfChoice_dev*.toe
+dev/
+*.toe.dir/
+*.toe.toc
+Backup/
+# build scripts used while making the set (paths of the author's machine)
+code/build_*.py
+code/old/
+code/tidy_*.py
+code/make_kantan_layouts.py
+# weapon footage is not shipped
+WeaponsArchive/videos/
+# your own clips stay local
+clips/*
+!clips/README.txt
+# old notes, replaced by README
+CONTROLS.md
+# Giga's models: waiting for his OK
+/models/
