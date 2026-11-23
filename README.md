@@ -91,4 +91,8 @@ The shaders and scripts are embedded in the `.toe`. `code/` and `shaders/` hold 
 - HDRI: `studio_small_09` from [Poly Haven](https://polyhaven.com), CC0.
 - The weapons data is public information gathered on 2026-11-20. Costs and numbers are order-of-magnitude estimates; read `WeaponsArchive/README.md` before you quote them.
 
+## Support
+This set is free and stays free. If it ends up in your show, or it just saved you a weekend, you can buy me a coffee:
+**[ko-fi.com/zenfortv](https://ko-fi.com/zenfortv)**. It goes back into gear, footage and the next free project.
+
 Made by [Zen4tv](https://www.instagram.com/zen_for_tv/).
