@@ -37,7 +37,7 @@ def status():
     on = '  '.join({'Mosh': 'EDGE', 'Strobe': 'CRASH'}.get(n, n.upper()) for n in ('Metal', 'Mosh', 'Blob', 'Strobe', 'Luma') if op(COMPS[n]).par.On.eval())
     n = len(_pending()['vals']) + len(_pending()['acts'])
     return ('' if op('/local/time').par.play.eval() else 'TD PAUSED!   ') + ('SHIFT: %d WAITING   ' % n if s.par.Shift.eval() else '') + ('AUTO RUNNING   ' if s.par.Autorunning.eval() else '') + 'BPM %d /%s   ' % (s.par.Bpm.eval(), s.par.Beatevery.eval()) + 'IN %s   TIMELINE %s   stage %d/3   %d:%02d   section %.1f min      ON: %s      PAD: %s' % (
-        '+'.join(n for n, u in (('VIDEO', 'Usevideo'), ('HUD', 'Usehud'), ('POP', 'Usepop')) if op('/input').par[u].eval()) or '-', 'PLAY' if s.par.Play.eval() else 'STOP', s.par.Stage.eval() + 1, t // 60, t % 60, s.par.Section.eval(), on or '-', ('ON' if s.par.Padon.eval() else 'OFF') + ('' if op('/show/pad')['connected'] else ' (not connected)'))
+        '+'.join(n for n, u in (('VIDEO', 'Usevideo'), ('HUD', 'Usehud'), ('POP', 'Usepop')) if op('/input').par[u].eval()) or '-', 'PLAY' if s.par.Play.eval() else 'STOP', s.par.Stage.eval() + 1, t // 60, t % 60, s.par.Section.eval(), on or '-', 'ON' if s.par.Padon.eval() else 'OFF')
 
 
 # ---- SHIFT (MetalShow.58): while Show:Shift is on, panel changes wait in a pending list (shown on the panel,
@@ -195,7 +195,7 @@ def cook_labels(scriptOp):
     k = K()
     found = controls()
     scriptOp.clear()
-    measure = scriptOp.parent().op('text_labels').evalTextSize
+    measure = scriptOp.parent().op('text_measure').evalTextSize    # own TOP: measuring text_labels made a cook loop
     for row in k.labels(found, [state(c)[3] for c in found], measure, status()):
         scriptOp.appendRow(row)
 
