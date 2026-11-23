@@ -10,6 +10,13 @@ This is the set I played live at **Interferenze, Bunker Torino**. It's now free,
 
 ![The control panel](docs/img/panel.jpg)
 
+## Why a weapons archive
+
+Not because we like weapons. The countries we live in use war to make money: public budgets turn into profit for the
+arms lobbies, not for the people who pay for them. Those wars are wrecking the world and terrorising whole populations.
+The HUD puts the machines on screen with what we could find about them: who makes them, who buys them, where they are
+used, what they cost.
+
 ## What's inside
 
 1. **WEAPONS OF CHOICE: the HUD.** 15 weapons made in Europe or the USA, from the F-35 to the 155mm shell. Each one has its maker, factories, buyers, wars and cost, shown as a retro game screen with the weapon as a point cloud. The data and its sources are in `WeaponsArchive/` (`weapons.json`, `ESTIMATES.md`). Estimates are always labelled as estimates.
@@ -71,7 +78,9 @@ The shaders and scripts are embedded in the `.toe`. `code/` and `shaders/` hold 
 - **[Tuneli Touring Club](https://www.instagram.com/tuneli_touring_club/)**: always a source of stylistic inspiration.
 - **Okamirufu Vizualizer**: the liquid chrome look follows his tutorial ["Metallic Glass Y2K Aesthetic"](https://www.youtube.com/watch?v=YLnmP48qFhY).
 - **kantanMapper** (TouchDesigner palette) for the mapping.
-- Made in **[TouchDesigner](https://derivative.ca)**. First played live at Interferenze, Bunker Torino, with [@pixels_smoothies](https://www.instagram.com/pixels_smoothies/).
+- **[@andreabanone_bam_bam](https://www.instagram.com/andreabanone_bam_bam/)**: played it live with me at Interferenze, Bunker Torino.
+- **[Pixels Smoothies](https://www.instagram.com/pixels_smoothies/)**: my collective. 100% pixels, 0% fruit.
+- Made in **[TouchDesigner](https://derivative.ca)**.
 
 ## Licences
 - My code, shaders and the `.toe` network: MIT (see `LICENSE`).
