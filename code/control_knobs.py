@@ -83,9 +83,8 @@ def controls():
     out.append(button('Show:Mapping', 'MAPPING', 65, Y_BTN1, 50))
     out.append(dict(par='Show:Screens', kind=BUTTON, step=1, label='', raw=True, value=None, x=175, y=Y_BTN1, hw=50, hh=13))
     out.append(button('Show:Panic', 'PANIC  FB RESET ALL', COL_W / 2, Y_BTN2, 105))
-    # pad map: PRO (operator) / PLAY (anyone: bangs + holds, sticks warp, AUTO keeps going) - MetalShow.49
-    out.append(button('Show:Padmode', 'PAD PRO', 65, Y_PRESET, 50, value='pro', hh=11))
-    out.append(button('Show:Padmode', 'PAD PLAY', 175, Y_PRESET, 50, value='play', hh=11))
+    # gamepad on / off (one map: PLAY, anyone can play). Plugging the pad in turns it on.
+    out.append(button('Show:Padon', 'PAD  ON / OFF', COL_W / 2, Y_PRESET, 105, hh=11))
     # one column per effect
     for e, (sc, title, knobs, actions) in enumerate(EFFECTS):
         x0 = COL_W * (e + 1)
@@ -95,11 +94,16 @@ def controls():
             out.append(dict(button('%s:Screen%d' % (sc, k), 'S%d' % k, x0 + 115 + 36 * k, Y_TITLE, 15, hh=15), need=k if k > 1 else 2))
         for i, (par, label) in enumerate(knobs):
             out.append(knob(sc + ':' + par, label, cx - 55 + 110 * (i % 2), Y_KNOBS[i // 2]))
-        if sc == 'Mosh':    # edge / mosh look switch instead of the mosh bloom
+        if sc == 'Metal':   # NOISE on/off: the liquid noise under the chrome (off = only the picture shapes it)
+            out.append(button('Metal:Noise', 'NOISE', cx - 74, Y_BTN1, 34))
+            out.append(button('Metal:Action1', actions[0], cx, Y_BTN1, 34))
+            out.append(button('Metal:Action2', actions[1], cx + 74, Y_BTN1, 34))
+        elif sc == 'Mosh':  # edge / mosh look switch instead of the mosh bloom
             out.append(dict(par='Mosh:Look', kind=BUTTON, step=1, label='', raw=True, value=None, x=cx - 55, y=Y_BTN1, hw=50, hh=13))
+            out.append(button(sc + ':Action2', actions[1], cx + 55, Y_BTN1, 50))
         else:
             out.append(button(sc + ':Action1', actions[0], cx - 55, Y_BTN1, 50))
-        out.append(button(sc + ':Action2', actions[1], cx + 55, Y_BTN1, 50))
+            out.append(button(sc + ':Action2', actions[1], cx + 55, Y_BTN1, 50))
         out.append(button(sc + ':Reset', 'RESET', cx - 55, Y_BTN2, 50))
         out.append(button(sc + ':Fbreset', 'FB RST', cx + 55, Y_BTN2, 50))
         if sc == 'Blob':    # colour scheme stepper (MetalShow.56), free knob row
@@ -194,6 +198,9 @@ def controls():
         out.append(s)
     out.append(dict(button('Input:Clipfolder', 'CLIP FOLDER', 1393, Y_SETUP, 58, hh=11,
                            call="op('/input').op('clip_folder').module.choose()"), nolit=True))
+    for c in out:                # POP controls sit in other columns: group 1 = their own backing colour
+        if c['par'].startswith('Pop:'):
+            c['group'] = 1
     return out
 
 

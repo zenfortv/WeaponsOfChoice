@@ -144,7 +144,13 @@ def press(what):
 
 def pad(name, val, prev):
     """chopexec onValueChange on the joystick: fire once when a button / trigger goes down."""
-    if name != 'connected' and abs(val - prev) > 0.1:
+    if name == 'connected':          # plug the pad in = PAD on (the panel's PAD button turns it off)
+        if val >= 0.5 > prev:
+            S().par.Padon = True
+        return
+    if not S().par.Padon.eval():
+        return
+    if abs(val - prev) > 0.1:
         mark_input()
     if play_mode():
         play_pad(name, val, prev)

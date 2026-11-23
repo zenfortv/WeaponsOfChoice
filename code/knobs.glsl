@@ -15,6 +15,11 @@ const vec3 AQUA  = vec3(0.420, 0.880, 0.950);
 const vec3 SEA   = vec3(0.210, 0.800, 0.640);
 const vec3 LIME  = vec3(0.740, 1.000, 0.260);
 const vec3 STRIP = vec3(0.022, 0.058, 0.066);
+const vec3 CARD  = vec3(0.016, 0.040, 0.046);   // dark card behind each column (one effect = one card)
+const vec3 EDGE  = vec3(0.090, 0.200, 0.215);
+const vec3 POPC  = vec3(0.165, 0.060, 0.205);   // POP controls: violet backing, wherever they sit
+const float COLW = 240.0;
+const vec2 CARDY = vec2(118.0, 648.0);           // from the preset row up to the column titles
 const float START = 2.35619449;   // the arc runs 135 degrees either side of twelve o'clock
 const float SWEEP = 4.71238898;
 
@@ -94,9 +99,24 @@ void main()
 	float spark = uLive.z * 0.018 + uLive.x * 0.006 + 0.0006;
 	if (rare < spark) col = mix(col, LIME, 0.22 + 0.3 * uLive.z);
 
+	// column cards
+	float k = floor(px.x / COLW);
+	vec2 cc = vec2(k * COLW + COLW * 0.5, (CARDY.x + CARDY.y) * 0.5);
+	vec2 ch = vec2(COLW * 0.5 - 5.0, (CARDY.y - CARDY.x) * 0.5);
+	col = mix(col, EDGE, box(px - cc, ch));
+	col = mix(col, CARD, box(px - cc, ch - 1.5));
+
 	col = meters(col, px, res);
 
 	int n = textureSize(sTD2DInputs[0], 0).x;
+	for (int i = 0; i < n; i++) {      // POP backings first, so no control gets painted over
+		if (texelFetch(sTD2DInputs[0], ivec2(i, 2), 0).y < 0.5) continue;
+		vec4 a = texelFetch(sTD2DInputs[0], ivec2(i, 0), 0);
+		vec4 b = texelFetch(sTD2DInputs[0], ivec2(i, 1), 0);
+		vec2 half_size = b.x < 0.5 ? vec2(a.z + 16.0, a.z + 20.0) : vec2(a.z + 4.0, b.z + 3.0);
+		vec2 c = b.x < 0.5 ? a.xy - vec2(0.0, 12.0) : a.xy;
+		col = mix(col, POPC, box(px - c, half_size));
+	}
 	for (int i = 0; i < n; i++) {
 		vec4 a = texelFetch(sTD2DInputs[0], ivec2(i, 0), 0);
 		vec4 b = texelFetch(sTD2DInputs[0], ivec2(i, 1), 0);

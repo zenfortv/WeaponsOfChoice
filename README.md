@@ -48,17 +48,18 @@ Performance: at 1920x1080 on a GTX 1070 it ran at about 25 fps with the HUD, blo
 
 ### Panel
 - **Top row**: each effect's on/off (METAL, EDGE, BLOB, CRASH, LUMA), then VIDEO / HUD / POP, then AUTO and CUT (cut or fade).
-- **Each column**: 8 look knobs, 2 actions, RESET (knobs back to the defaults), FB RST (clear the feedback) and 4 presets. Press STORE and then a number to save, or a number on its own to recall.
-- **Left column**: the gamepad drawing, which lights each button as you press it. Below it are the audio knobs (gain, amount, kick, pad fade), then MAPPING, screens, PANIC (clear every feedback), and PAD PRO / PAD PLAY.
+- **Each column** sits on its own dark card: 8 look knobs, 2 actions, RESET (knobs back to the defaults), FB RST (clear the feedback) and 4 presets. Press STORE and then a number to save, or a number on its own to recall. Controls on a **violet** backing belong to the POP point clouds, whichever column they sit in.
+- **METAL** has a **NOISE** button: on, the liquid chrome is shaped by noise plus your picture (knob **video** sets the mix); off, only your picture shapes it.
+- **Left column**: the gamepad drawing, which lights each button as you press it. Below it are the audio knobs (gain, amount, kick, pad fade), then MAPPING, screens, PANIC (clear every feedback) and **PAD ON / OFF**.
 - **Master column**: BOOM, STROBE, ZOOM, DROP and BLACK. BLACK is always the very last stage before the output.
 - **Timeline row**: PLAY / RESTART / NEXT run the show through METAL > EDGE > BLOB. The colour scheme, the POP model and TAP tempo are here too.
 - **SHIFT** (bottom right): while it's on, panel changes wait. Press SHIFT again and they all land on the same frame.
 - **AUTO**: when nobody touches anything for `idle sec`, it plays the show on its own and changes the look every `auto step` seconds.
 
 ### Gamepad (Xbox-style)
-**PAD PRO**: X / Y / A / B switch METAL / EDGE / BLOB / CRASH. RB and RT fire every active effect's Action 1 and Action 2. Hold LB for strobe and zoom. Back = PANIC, Start = timeline. The D-pad left/right picks which column the sticks play; up/down picks presets or clips. LT = HUD punch-in, L3 = next weapon, R3 = BOOM.
+Plug the pad in and it turns on (status line: `PAD: ON`); **PAD ON / OFF** on the panel turns it off. One map, made for anyone walking by:
 
-**PAD PLAY** (for anyone walking by): nothing changes for good. Taps are bangs, holds go back when you let go, and AUTO keeps running underneath. A = BOOM, hold B = CRASH, X = HIT, Y = next look, LB = strobe, RB = DROP, LT = HUD, hold RT = EDGE, D-pad = colours and clips, sticks = DIFFERENCE with the POP clouds and the clips.
+Nothing changes for good. Taps are bangs, holds go back when you let go, and AUTO keeps running underneath. A = BOOM, hold B = CRASH, X = HIT, Y = next look, LB = strobe, RB = DROP, LT = HUD, hold RT = EDGE, D-pad = colours and clips, sticks = DIFFERENCE with the POP clouds and the clips.
 
 ### Screens
 `/show` page **Screens**: 1, 2 or 3 screens. Each effect can run on its own screens (the S1 S2 S3 buttons next to its name). For the mapping, press MAPPING to open kantanMapper and drag the corners. The default layouts are in `mapping/`.

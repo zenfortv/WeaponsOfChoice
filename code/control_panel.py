@@ -37,7 +37,7 @@ def status():
     on = '  '.join({'Mosh': 'EDGE', 'Strobe': 'CRASH'}.get(n, n.upper()) for n in ('Metal', 'Mosh', 'Blob', 'Strobe', 'Luma') if op(COMPS[n]).par.On.eval())
     n = len(_pending()['vals']) + len(_pending()['acts'])
     return ('' if op('/local/time').par.play.eval() else 'TD PAUSED!   ') + ('SHIFT: %d WAITING   ' % n if s.par.Shift.eval() else '') + ('AUTO RUNNING   ' if s.par.Autorunning.eval() else '') + 'BPM %d /%s   ' % (s.par.Bpm.eval(), s.par.Beatevery.eval()) + 'IN %s   TIMELINE %s   stage %d/3   %d:%02d   section %.1f min      ON: %s      PAD: %s' % (
-        '+'.join(n for n, u in (('VIDEO', 'Usevideo'), ('HUD', 'Usehud'), ('POP', 'Usepop')) if op('/input').par[u].eval()) or '-', 'PLAY' if s.par.Play.eval() else 'STOP', s.par.Stage.eval() + 1, t // 60, t % 60, s.par.Section.eval(), on or '-', 'PLAY (anyone)' if s.par.Padmode.eval() == 'play' else s.par.Focus.menuLabels[s.par.Focus.menuIndex])
+        '+'.join(n for n, u in (('VIDEO', 'Usevideo'), ('HUD', 'Usehud'), ('POP', 'Usepop')) if op('/input').par[u].eval()) or '-', 'PLAY' if s.par.Play.eval() else 'STOP', s.par.Stage.eval() + 1, t // 60, t % 60, s.par.Section.eval(), on or '-', ('ON' if s.par.Padon.eval() else 'OFF') + ('' if op('/show/pad')['connected'] else ' (not connected)'))
 
 
 # ---- SHIFT (MetalShow.58): while Show:Shift is on, panel changes wait in a pending list (shown on the panel,
@@ -181,6 +181,7 @@ def cook_data(scriptOp):
     out = np.zeros((5, len(found), 4), np.float32)
     out[:2] = k.data(found, [s[:3] for s in states])
     out[2, :, 0] = times
+    out[2, :, 1] = [c.get('group', 0) for c in found]     # 1 = POP control: own backing colour
     out[3, :, 3] = -100.0
     recent = sorted((n for n in range(len(found)) if now - times[n] < 2.0), key=lambda n: -times[n])[:16]
     for j, n in enumerate(recent):
